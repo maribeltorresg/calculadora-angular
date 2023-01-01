@@ -1,0 +1,16 @@
+<div class="row d-flex justify-content-between">
+  <div class="col-6">
+    <div class="my-4">
+      <input type="number" [(ngModel)]="number1" />
+      <input type="number" [(ngModel)]="number2" />
+      <button class="btn mt-4" (click)="onSumar()">CALCULAR</button>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="my-5 p-3 result">
+      <p>Number 1: {{ number1 }} Number 2: {{ number2 }}</p>
+      <br />
+      <p *ngIf="resultado > 0">La suma es: {{ number1 + number2 }}</p>
+    </div>
+  </div>
+</div>
